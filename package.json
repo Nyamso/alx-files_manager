@@ -1,0 +1,35 @@
+{
+  "name": "file_manager",
+  "version": "1.0.0",
+  "description": "A file management API",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "lint": "eslint",
+    "lint-nt": "eslint.cmd",
+    "check-lint": "lint controllers/ libs/ middlewares/ routes/ utils/ server.js worker.js",
+    "check-lint-nt": "yarn lint-nt controllers/ libs/ middlewares/ routes/ utils/ server.js worker.js",
+    "start-server": "nodemon --exec babel-node --presets @babel/preset-env ./server.js",
+    "start-worker": "nodemon --exec babel-node --presets @babel/preset-env ./worker.js",
+    "dev": "nodemon --exec babel-node --presets @babel/preset-env",
+    "test": "mocha --opts mocha.opts tests/**/*.js",
+    "test-with-coverage": "nyc --reporter=text ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js",
+    "coveralls": "nyc ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/Nyamso/alx-files_manager.git"
+  },
+  "author": "Rehema Msosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nyamso/alx-files_manager/issues"
+  },
+  "homepage": "https://github.com/Nyamso/alx-files_manager#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "rehema"
+  ]
+}
