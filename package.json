@@ -13,11 +13,12 @@
     "dev": "nodemon --exec babel-node --presets @babel/preset-env",
     "test": "mocha --opts mocha.opts tests/**/*.js",
     "test-with-coverage": "nyc --reporter=text ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js",
-    "coveralls": "nyc ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "nyc ./node_modules/.bin/mocha --opts mocha.opts tests/**/*.js && nyc report --reporter=text-lcov | coveralls",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nyamso/alx-files_manager.git"
+    "url": "git+https://github.com/Nyamso/alx-files_manager.git"
   },
   "author": "Rehema Msosa",
   "license": "ISC",
@@ -28,8 +29,19 @@
   "dependencies": {
     "express": "^4.18.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/register": "^7.23.7",
+    "eslint": "^8.56.0",
+    "mocha": "^10.3.0",
+    "redis": "^4.6.13"
+  },
   "keywords": [
     "rehema"
-  ]
+  ],
+  "directories": {
+    "test": "tests"
+  }
 }
