@@ -1,4 +1,4 @@
-import Queue from 'bull';
+mport Queue from 'bull';
 import imageThumbnail from 'image-thumbnail';
 import { promises as fs } from 'fs';
 import { ObjectID } from 'mongodb';
