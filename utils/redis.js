@@ -1,4 +1,4 @@
-import { createClient } from 'redis';
+mport { createClient } from 'redis';
 import { promisify } from 'util';
 
 // class to define methods for commonly used redis commands
