@@ -1,4 +1,4 @@
-import express from 'express';
+mport express from 'express';
 import router from './routes/index';
 
 const port = parseInt(process.env.PORT, 10) || 5000;
