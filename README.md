@@ -2,7 +2,7 @@
 
 A simple file management API built with Express, MongoDB, Redis, Bull, and Node.js.
 
-### Applications
+### Application
 
 + Node.js
 + Yarn (the package manager/resource negotiator)
