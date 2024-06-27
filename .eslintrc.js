@@ -1,4 +1,4 @@
-module.exports = {
+odule.exports = {
     "env": {
         "browser": true,
         "commonjs": true,
