@@ -1,4 +1,4 @@
-mport dbClient from './utils/db';
+import dbClient from './utils/db';
 
 const waitConnection = () => {
     return new Promise((resolve, reject) => {
