@@ -1,4 +1,4 @@
-mport supertest from 'supertest';
+import supertest from 'supertest';
 import chai from 'chai';
 import api from '../server';
 
